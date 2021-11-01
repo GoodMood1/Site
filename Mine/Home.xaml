@@ -1,0 +1,42 @@
+﻿<Page x:Class="Mine.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Mine"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Home">
+    <Grid>
+        <Image Source="d.jpg" Margin="0,-9,0,0"/>
+        <Label Foreground="White" Content="Логин:" Margin="3,12,753,409" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" x:Name="loginName1" Content="Anonimus" Margin="47,12,641,409" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" Content="Счет:" Margin="161,10,597,411" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" x:Name="Money1" Content="1000$" Margin="204,10,377,410" />
+        <Button x:Name="exit"  Background="Violet" Content="Выход" Click="exit_Click" Margin="516,-10,198,430" Opacity="0.6" Width="86" Height="30"/>
+        <Button x:Name="hist"  Background="Violet" Content="История" Click="hist_Click" Margin="619,-10,95,430" Opacity="0.6" Width="86" Height="30"/>
+        <Button x:Name="shopc" Background="Violet" Content="Корзина" Click="shopc_Click" Margin="722,-10,-8,430" Opacity="0.6"  Width="86" Height="30"/>
+        <Grid Margin="0,65,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="Violet" BorderThickness="3">
+                <Button x:Name="Generalcharacters" Click="Generalcharacters_Click" Background="DarkRed" Foreground="White" FontSize="21" Content="Общие характеристики" Grid.Column="0" Grid.Row="0" Opacity="0.8"/>
+            </Border>
+            <Border BorderBrush="Violet" BorderThickness="3" Grid.Column="0" Grid.Row="1">
+                <Button x:Name="Skills" Click="Skills_Click"  Background="DarkRed" Foreground="White" FontSize="21" Content="Навыки" Grid.Column="0" Grid.Row="1" Opacity="0.8"/>
+            </Border>
+            <Border BorderBrush="Violet" BorderThickness="3" Grid.Column="1" Grid.Row="0">
+                <Button x:Name="CharactersHeroes" Click="CharactersHeroes_Click"  Background="DarkRed" Foreground="White" FontSize="21" Content="Характеристики героев" Grid.Column="1" Grid.Row="0" Opacity="0.8"/>
+            </Border>
+            <Border BorderBrush="Violet" BorderThickness="3" Grid.Column="1" Grid.Row="1">
+                <Button x:Name="CharactersActors" Click="CharactersActors_Click"   Background="DarkRed" Foreground="White" FontSize="21" Content="Внешность актеров/актрис" Grid.Column="1" Grid.Row="1" Opacity="0.8"/>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

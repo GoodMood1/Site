@@ -1,0 +1,38 @@
+﻿<Page x:Class="Mine.GeneralCharacters"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Mine"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="GeneralCharacters" Width="744.706">
+
+    <Grid>
+        <Image Source="b.jpg" Margin="-116,-13,-116.333,13"/>
+        <Label Foreground="White" Content="Логин:" Margin="16,10,680.667,405"/>
+        <Label Foreground="White" x:Name="loginName1" Content="Anonimus" Margin="61,11,608.667,410" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" Content="Счет:" Margin="161,10,541.667,411" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" x:Name="Money1" Content="1000$" Margin="204,11,376.667,409" />
+        <Button x:Name="hist"  Background="White" Content="История" Click="hist_Click" Margin="549,-9,109.667,429" Opacity="0.6" Width="86" Height="30"/>
+        <Button x:Name="shopc" Background="White" Content="Корзина" Click="shopc_Click" Margin="644,-9,14.667,429" Opacity="0.6"  Width="86" Height="30"/>
+        <Button x:Name="back" Background="White" Content="Назад" Click="back_Click" Opacity="0.6" Height="30" Margin="3,411,628.667,9"/>
+        <Label Foreground="White" FontSize="25" FontStyle="Italic" Margin="220,53,208.667,332">Общие характеристики</Label>
+        <StackPanel>
+            <ListBox x:Name="lss" Margin="26,120,20.667,46" Opacity="0.9" SelectionMode="Multiple" Foreground="Black" FontWeight="Medium" FontSize="21" FontStyle="Italic" Height="214">
+                <ListViewItem  BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Жизнерадостность                                                 Стоимость: 350$"/>
+                <ListViewItem  BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Хладнокровность                                                    Стоимость: 900$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Эрудиция                                                                   Стоимость: 500$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3" Background="Silver" Content="Харизма                                                                     Стоимость: 50$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3" Background="Silver" Content="Красноречивость                                                     Стоимость: 150$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Тупизм в нужный момент                                      Стоимость: 500$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Внимательность                                                     Стоимость: 50$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Храбрость                                                                 Стоимость: 100$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Хитрость                                                                  Стоимость: 500$"/>
+                <ListViewItem BorderBrush="Black" BorderThickness="3"  Background="Silver"  Content="Хорошее чувство юмора                                         Стоимость: 300$"/>
+            </ListBox>
+        </StackPanel>
+        <Button Foreground="White" x:Name="CArtS" Background="DarkBlue" Content="Добавить в корзину" Click="CArtS_Click" Height="30" Margin="620,410,6.667,10"/>
+
+    </Grid>
+</Page>

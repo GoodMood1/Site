@@ -1,0 +1,23 @@
+﻿<Page x:Class="Mine.History"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Mine"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="History">
+    <Grid>
+        <Image Source="c.jpg" Margin="0,-9,0,0"/>
+        <Label FontSize="29" FontStyle="Italic" Foreground="White" Margin="319,32,351,371">История</Label>
+        <Label Foreground="White" Content="Логин:" Margin="3,12,750,409" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" x:Name="loginName1" Content="Anonimus" Margin="47,12,641,409" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" Content="Счет:" Margin="161,10,597,411" RenderTransformOrigin="0.43,0.569"/>
+        <Label Foreground="White" x:Name="Money1" Content="1000$" Margin="204,10,377,410" />
+        <Button x:Name="shopc" Background="RosyBrown" Content="Корзина" Click="shopc_Click" Margin="718,-8,-4,428" Width="86" Height="30"/>
+        <ListBox x:Name="sls"  Background="RosyBrown" Margin="179,98,167,27"  Opacity="0.8">
+
+        </ListBox>
+        <Button x:Name="back" Background="RosyBrown" Content="Назад" Click="back_Click" Height="30" Margin="-3,421,679,-1"/>
+    </Grid>
+</Page>
